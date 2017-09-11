@@ -1,0 +1,32 @@
+\chapter{Example Content}
+
+% A paragraph of text
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+% A list of items
+\begin{itemize}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{itemize}
+
+% A figure
+\begin{figure}[H]
+\caption{Example Figure}
+\label{FigureExample}
+\centering
+\includegraphics[width=100mm]{images/latex-logo.png}
+\end{figure}
+
+% Swift Code Listing
+\begin{lstlisting}[label=LstSwiftCodeExample, style=Basic, language=CustomSwift, caption={Swift Code Listing}]
+func factorial(_ n: Int) -> Int {
+  guard n != 0 else {
+    return 1
+  }
+  return n * factorial(n - 1)
+}
+\end{lstlisting}
+
+% Example citation
+The source code for this thesis is hosted on GitHub \cite{github}.

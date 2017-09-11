@@ -1,0 +1,16 @@
+.DS_Store
+*.aux
+*.log
+*.bbl
+*.bcf
+*.toc
+*.out
+*.blg
+*.lof
+*.gz
+*.gz(busy)
+*.run.xml
+*.lol
+*.lot
+*.texpadtmp
+latex/thesis.pdf

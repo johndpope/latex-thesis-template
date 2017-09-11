@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper,oneside,parskip=half,DIV=8,BCOR=10mm]{scrbook}
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.0} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables?
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+
+\makeatletter
+\let\@tmp\@xfloat
+\usepackage{fixltx2e}
+\let\@xfloat\@tmp
+\makeatother
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[usenames,dvipsnames]{xcolor} %color changes
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage{stmaryrd}
+\usepackage{csquotes}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyvrb}
+\usepackage{pdfpages}
+\usepackage{rotating}
+
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fontspec}
+\input{codeformatting}
+
+\title{Tifig}
+\subtitle{}
+\subject{Master Thesis}
+\author{Toni Suter}
+\date{Fall Term 2016}
+\publishers{Supervised by Prof. Peter Sommerlad}
+
+
+\hypersetup{
+	pdfauthor={Toni Suter},
+	pdftitle={Tifig},
+	hidelinks
+}
+
+
+\begin{document}
+
+\includepdf[pages={1}]{images/titlepage.pdf}
+\cleardoublepage
+
+\pagestyle{headings}
+\setcounter{page}{1}
+\pagenumbering{Roman}
+
+\input{00_abstract}
+\cleardoublepage
+
+\input{00_management_summary}
+\cleardoublepage
+
+\input{00_declarationofauthorship}
+\cleardoublepage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\tableofcontents
+
+\input{01_task_description}
+
+\input{02_example_content}
+
+\appendix
+
+\input{99_appendices}
+
+\input{99_projectorganization}
+
+\input{99_timereport}
+
+
+\cleardoublepage
+
+\phantomsection
+
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\bibliographystyle{alpha}
+\bibliography{thesis}
+
+\end{document}
